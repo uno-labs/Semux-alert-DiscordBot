@@ -108,7 +108,7 @@ setInterval(async function () {
     return
   }
   for (let pool of result.pools) {
-    bot.channels.find(c => c.name === 'uno-labs').send(`:scream:  Pool https://semux.top/address/${pool.validator} needs votes to get back in Top-100!`)
+    bot.channels.find(c => c.name === 'uno-labs').send(`:scream:  Pool https://semux.top/delegate/${pool.validator} needs votes to get back in Top-100!`)
   }
 }, 300 * 1000)
 
